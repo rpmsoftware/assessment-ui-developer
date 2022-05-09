@@ -1,8 +1,8 @@
 # UI Developer Assessment
 
-In this assessment you will show your abilities and experience with regards to integrating modern technologies like React with an old codebase that uses Mootools.
+In this assessment you will show your abilities and experience with regards to integrating modern technologies like React with an old codebase that uses MooTools.
 
-Deep knowledge of Mootools is not necessary to complete this assignment but knowledge of similar libraries from the same era (like JQuery) will help.
+Deep knowledge of MooTools is not necessary to complete this assignment but knowledge of similar libraries from the same era (like JQuery) will help.
 
 ## Assignment
 
@@ -27,4 +27,10 @@ Build a modern UI component and render it in the `id="new"` div, it should do th
     - Allow modern JS syntax and/or TypeScript in the old code
     - Integrate the old codebase into a unified build system
 - Unit testing
-- 
+
+## Delivery
+
+- For this repository and build your solution
+  - Add a README-IMPLEMENTED.md with any details necessary.
+- Once the solution is build, send your repository's link to `joaquin.windmuller` at `scansource.com`.
+- You have a week to build the solution
