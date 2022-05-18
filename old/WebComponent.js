@@ -29,6 +29,8 @@ Rpm = {};
 				.addClass(this.componentName + '--container');
 			this.connectComponentUI();
 			this.addIDToElement(this.container, 'Container');
+			// Store this component in the container
+			this.container.store('WebComponent', this);
 		},
 		render: function () {
 			this.content = this.buildComponentContent();
