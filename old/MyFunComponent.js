@@ -31,8 +31,11 @@
         buttonClicked: function(event)  {
             event.stop();
             var text =  event.target.get('text');
+            this.setText(text);
+            this.fireEvent('ButtonClicked', text);
+        },
+        setText: function(text) {
             this.el.info.set('text', text);
-            this.fireEvent('ButtonClicked',text);
         }
     });
 
