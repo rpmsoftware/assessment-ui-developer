@@ -32,5 +32,5 @@ Build a modern UI component and render it in the `id="new"` div, it should do th
 
 - For this repository and build your solution
   - Add a README-IMPLEMENTED.md with any details necessary.
-- Once the solution is build, send your repository's link to `joaquin.windmuller` at `scansource.com`.
+- Once the solution is build, send your repository's link to your hiring contact.
 - You have a week to build the solution
