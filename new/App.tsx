@@ -2,24 +2,27 @@ import React, {useEffect, useState} from 'react';
 
 function App() {
     const [divContent, setDivContent] = useState("Click a button");
-    let oldButtons: NodeList;
+    const oldDiv = document.getElementById("old");
+    let oldButtons: NodeListOf<HTMLButtonElement>;
 
     const legacyHandler = () => {
-        console.log("legacyHandler");
         if (!oldButtons) {
-            // Add click event to legacy mootools buttons
-            oldButtons = document.querySelectorAll("#old > button");
-            oldButtons.forEach((oldButton: HTMLButtonElement) => {
-                console.log("Add click event to button " + oldButton.innerHTML.toString());
+            // Add click event to mootools buttons
+            oldButtons = oldDiv.querySelectorAll(":scope > button") as NodeListOf<HTMLButtonElement>;
+            oldButtons.forEach((oldButton) => {
                 oldButton.addEventListener("click", () => buttonClick(oldButton));
             });
         }
     };
 
     const buttonClick = (button: HTMLButtonElement) => {
-        console.log("Button " + button.innerHTML.toString() + " clicked");
         setDivContent("Button " + button.innerHTML.toString() + " clicked");
     };
+
+    const clearContent = () => {
+        setDivContent(null);
+        oldDiv.querySelector(":scope > div").innerHTML = null;
+    }
 
     useEffect(() => {
         legacyHandler();
@@ -27,8 +30,9 @@ function App() {
 
     // Return app output to be rendered by index.tsx
     return (
-        <div>
-            {divContent}
+        <div id="reactComponent">
+            <button onClick={clearContent}>Clear</button>
+            <div>{divContent}</div>
         </div>
     );
 }
