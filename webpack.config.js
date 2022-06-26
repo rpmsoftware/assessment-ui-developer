@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 const path = require("path");
 
@@ -12,6 +13,12 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./index.html",
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        // Bundle old mootools component as is...
+        { from: path.resolve(__dirname, "old"), to: "old" },
+      ],
     }),
   ],
   resolve: {
