@@ -1,0 +1,20 @@
+{
+  "name": "assessment-ui-developer",
+  "version": "1.0.0",
+  "description": "In this assessment you will show your abilities and experience with regards to integrating modern technologies like React with an old codebase that uses MooTools.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leeanderson410/assessment-ui-developer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leeanderson410/assessment-ui-developer/issues"
+  },
+  "homepage": "https://github.com/leeanderson410/assessment-ui-developer#readme"
+}
