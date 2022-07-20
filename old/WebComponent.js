@@ -1,4 +1,5 @@
 Rpm = {};
+Rpm.RegisteredComponents = {};
 
 (function () {
 	'use strict';
@@ -11,6 +12,9 @@ Rpm = {};
 		componentName: 'WebComponent',
 		container: null,
 		content: null,
+		initialize: function(options) {
+			this.setOptions(options);
+		},
 		// You usually don't need to extend renderInside directly, see:
 		// - buildComponentContent
 		// - connectComponentUI
@@ -29,6 +33,12 @@ Rpm = {};
 				.addClass(this.componentName + '--container');
 			this.connectComponentUI();
 			this.addIDToElement(this.container, 'Container');
+			// Store this component in the container
+			var existing = Rpm.RegisteredComponents[this.options.instanceID];
+			if (existing !== undefined) {
+				throw "A web component with ID " + this.options.instanceID + " is already registered";
+			}
+			Rpm.RegisteredComponents[this.options.instanceID] = this;
 		},
 		render: function () {
 			this.content = this.buildComponentContent();
