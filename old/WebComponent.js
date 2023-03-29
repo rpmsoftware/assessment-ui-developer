@@ -28,7 +28,7 @@ Rpm.RegisteredComponents = {};
 			}
 
 			var containerRoot = this.container.reactRoot;
-			var root = containerRoot ? containerRoot : this.container.attachShadow({mode: 'open'});
+			var root = containerRoot ? containerRoot : this.container.attachShadow({mode: 'closed'});
 
 			var content = this.content;
 			if (Array.isArray(content)) {
