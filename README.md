@@ -13,12 +13,12 @@ The index.html page renders a very simple MooTools-based web component with 3 bu
 1. Build a modern UI component and render it in the `id="new"` div, it should do the following:
   1. Update when any of the buttons on the old component are clicked
   2. Have a button of it's own that when clicked updates something in the old component (bi-directional communication), using object oriented programming
-2. Add a second React component to the page, it's functionality is up to you.
+2. Add a second React component to the page, it's functionality is up to you
 
 ### Requirements
 
 - Complete the main goal using React and TypeScript
-- Provide a git repository with your solution. A zip file or a link to a public GitHub repo.
+- Provide a git repository with your solution usign link to a publicly accesible repository.
 - Changes to index.html should be minimal: it is a proxy for one of the many pages in our platform.
 
 #### Extra credits
