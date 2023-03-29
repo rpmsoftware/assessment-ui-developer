@@ -23,8 +23,7 @@ The index.html page renders a very simple MooTools-based web component with 3 bu
 
 #### Extra credits
 
-- Show how you would enable having multiple entry points that would allow to optimize script loading to what's necessary on each page.
-- Unit testing
+If time allows, add unit testing to the new React code.
 
 ## Delivery
 
