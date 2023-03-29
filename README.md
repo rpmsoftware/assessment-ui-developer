@@ -10,27 +10,25 @@ The index.html page renders a very simple MooTools-based web component with 3 bu
 
 ### Main goal
 
-Build a modern UI component and render it in the `id="new"` div, it should do the following:
-
-1. Update when any of the buttons on the old component are clicked
-2. Have a button of it's own that when clicked updates something in the old component (bi-directional communication), using object oriented programming
+1. Build a modern UI component and render it in the `id="new"` div, it should do the following:
+  1. Update when any of the buttons on the old component are clicked
+  2. Have a button of it's own that when clicked updates something in the old component (bi-directional communication), using object oriented programming
+2. Add a second React component to the page, it's functionality is up to you.
 
 ### Requirements
 
-- Build the component as described using React and TypeScript
-- Your git commit history should show your normal work process
-- The index.html should not be changed too much if possible: it is a proxy for one of the many pages in our platform.
+- Complete the main goal using React and TypeScript
+- Provide a git repository with your solution. A zip file or a link to a public GitHub repo.
+- Changes to index.html should be minimal: it is a proxy for one of the many pages in our platform.
 
 #### Extra credits
 
-- Show a path to modernize the old codebase, some ideas:
-    - Allow modern JS syntax and/or TypeScript in the old code
-    - Integrate the old codebase into a unified build system
+- Show how you would enable having multiple entry points that would allow to optimize script loading to what's necessary on each page.
 - Unit testing
 
 ## Delivery
 
 - Create a new repository with the initial code and build your solution on top of it
-  - Add a README-IMPLEMENTED.md with any details necessary.
-- Once the solution is build, send your repository's link to your hiring contact.
-- Please deliver the solution within 9 days of receiving this assessment
+  - Add a README-IMPLEMENTED.md with any details necessary
+- Once the solution is built, send your solution to your hiring contact
+- Please deliver the solution within 14 days of receiving this assessment
