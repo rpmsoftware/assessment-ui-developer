@@ -18,7 +18,7 @@ The index.html page renders a very simple MooTools-based web component with 3 bu
 ### Requirements
 
 - Complete the main goal using React and TypeScript
-- Provide a git repository with your solution usign link to a publicly accesible repository.
+- Provide a git repository with your solution using link to a publicly accessible repository.
 - Changes to index.html should be minimal: it is a proxy for one of the many pages in our platform.
 
 #### Extra credits
