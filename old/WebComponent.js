@@ -27,10 +27,25 @@ Rpm.RegisteredComponents = {};
 				this.render();
 			}
 
-			this.container
-				.empty()
-				.adopt(this.content)
-				.addClass(this.componentName + '--container');
+			var containerRoot = this.container.reactRoot;
+			var root = containerRoot ? containerRoot : this.container.attachShadow({mode: 'open'});
+
+			var content = this.content;
+			if (Array.isArray(content)) {
+				content = document.createElement('div');
+				this.content.forEach(function(child) {
+					content.appendChild(child);
+				});
+			}
+
+			content.addClass(this.componentName + '--container')
+			root.appendChild(content);
+
+			var stylesheet = document.createElement('link');
+			stylesheet.href = './old/' + this.componentName + '.css';
+			stylesheet.rel = 'stylesheet';
+			root.appendChild(stylesheet);
+
 			this.connectComponentUI();
 			this.addIDToElement(this.container, 'Container');
 			// Store this component in the container
